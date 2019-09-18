@@ -15,7 +15,7 @@ let getPokemonData = async ()=> {
     const frontImg = pokemon.sprites.front_default;
 
     abilities.forEach(element =>{
-        pokemonAbilities.innerHTML = `<li>${element.name}</li>`
+        pokemonAbilities.innerHTML = `<li>${element.ability.name}</li>`
     });
 
     pokemonName.innerText = name;
